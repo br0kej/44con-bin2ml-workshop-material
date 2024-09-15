@@ -1,0 +1,35 @@
+[project]
+name = "bin2mlpy"
+authors = [
+    {name = "Josh Collyer", email ="br0kej@protonmail.com"}
+]
+description = "Supporting workshop materials for 44CON bin2ml 2024"
+requires-python = ">=3.10"
+version = "1.0.0"
+
+dependencies = [
+    "loguru",
+    "joblib",
+    "torch==2.2.0",
+    "torch_geometric",
+    "pytorch_metric_learning",
+    "torchmetrics",
+    "loguru",
+    "jupyter"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pre-commit"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bin2mlpy"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
