@@ -22,4 +22,4 @@ cd 44con-bin2ml-workshop-material
 unzip data.zip -d data/
 ```
 
-Once the above steps have been completed, you are ready to go. Head over to the workshop website here (TBC)
+Once the above steps have been completed, you are ready to go. Head over to the workshop website [here](https://br0kej.github.io/bin2ml-44con24-workshop.github.io/content/intro.html).
